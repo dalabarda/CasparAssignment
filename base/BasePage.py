@@ -1,5 +1,6 @@
 import allure
 from allure_commons.types import AttachmentType
+from traceback import print_stack
 from selenium.common.exceptions import ElementNotVisibleException, ElementNotSelectableException, NoSuchElementException
 from selenium.webdriver.support.wait import WebDriverWait
 import utilities.CustomLogger as cl
@@ -51,8 +52,8 @@ class BasePage:
             self.log.info("Element found with LocatorType: " + locatorType + " with the locatorValue :" + locatorValue)
         except:
             self.log.info(
-                "Element NOT found with LocatorType: " + locatorType + " and with the locatorValue :" + locatorValue)
-           
+                "Element not found with LocatorType: " + locatorType + " and with the locatorValue :" + locatorValue)
+
         return element
 
     def clickElement(self, locatorValue, locatorType="id"):
@@ -66,3 +67,71 @@ class BasePage:
         except:
             self.log.info(
                 "Unable to click on Element with LocatorType: " + locatorType + " and with the locatorValue :" + locatorValue)
+
+    def sendText(self, text, locatorValue, locatorType="id"):
+        element = None
+        try:
+            locatorType = locatorType.lower()
+            element = self.getElement(locatorValue, locatorType)
+            element.send_keys(text)
+            self.log.info(
+                "Send text  on Element with LocatorType: " + locatorType + " and with the locatorValue :" + locatorValue)
+        except:
+            self.log.info(
+                "Unable to send text on Element with LocatorType: " + locatorType + " and with the locatorValue :" + locatorValue)
+            self.takeScreenshot(locatorType)
+            assert False
+
+    def getText(self, locator="", locatorType="id", element=None, info=""):
+        """
+        NEW METHOD
+        Get 'Text' on an element
+        Either provide element or a combination of locator and locatorType
+        """
+        try:
+            if locator: # This means if locator is not empty
+                element = self.getElement(locator, locatorType)
+            text = element.text
+            if len(text) == 0:
+                text = element.get_attribute("innerText")
+            if len(text) != 0:
+                self.log.info("Getting text on element :: " +  info)
+                self.log.info("The text is :: '" + text + "'")
+                text = text.strip()
+        except:
+            self.log.error("Failed to get text on element " + info)
+            print_stack()
+            text = None
+        return text
+
+    def isDisplayed(self, locatorValue, locatorType="id"):
+        element = None
+        try:
+            locatorType = locatorType.lower()
+            element = self.getElement(locatorValue, locatorType)
+            element.is_displayed()
+            self.log.info(
+                " Element with LocatorType: " + locatorType + " and with the locatorValue :" + locatorValue + "is displayed ")
+            return True
+        except:
+            self.log.info(
+                " Element with LocatorType: " + locatorType + " and with the locatorValue :" + locatorValue + " is not displayed")
+            self.takeScreenshot(locatorType)
+            return False
+
+    def screenShot(self, screenshotName):
+        fileName = screenshotName + "_" + (time.strftime("%d_%m_%y_%H_%M_%S")) + ".png"
+        screenshotDirectory = "../screenshots/"
+        screenshotPath = screenshotDirectory + fileName
+        try:
+            self.driver.save_screenshot(screenshotPath)
+            self.log.info("Screenshot save to Path : " + screenshotPath)
+
+        except:
+            self.log.info("Unable to save Screenshot to the Path : " + screenshotPath)
+
+    def takeScreenshot(self,text):
+        allure.attach(self.driver.get_screenshot_as_png(),name=text, attachment_type=AttachmentType.PNG)
+
+    def keyCode(self,value):
+        self.driver.press_keycode(value)
