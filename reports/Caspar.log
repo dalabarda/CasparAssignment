@@ -1,0 +1,40 @@
+06/07/20 01:06:22 AM Monday - BasePage - INFO : Element found with LocatorType: id with the locatorValue :com.casparhealth.android.patient:id/next_button
+06/07/20 01:06:22 AM Monday - BasePage - INFO : Clicked on Element with LocatorType: id and with the locatorValue :com.casparhealth.android.patient:id/next_button
+06/07/20 01:06:22 AM Monday - BasePage - INFO : Element found with LocatorType: id with the locatorValue :com.casparhealth.android.patient:id/next_button
+06/07/20 01:06:23 AM Monday - BasePage - INFO : Clicked on Element with LocatorType: id and with the locatorValue :com.casparhealth.android.patient:id/next_button
+06/07/20 01:06:23 AM Monday - BasePage - INFO : Element found with LocatorType: id with the locatorValue :com.casparhealth.android.patient:id/start_button
+06/07/20 01:06:25 AM Monday - BasePage - INFO : Clicked on Element with LocatorType: id and with the locatorValue :com.casparhealth.android.patient:id/start_button
+06/07/20 01:06:26 AM Monday - BasePage - INFO : Element found with LocatorType: text with the locatorValue :Email or Caspar ID:
+06/07/20 01:06:27 AM Monday - BasePage - INFO : Send text  on Element with LocatorType: text and with the locatorValue :Email or Caspar ID:
+06/07/20 01:06:27 AM Monday - BasePage - INFO : Element found with LocatorType: text with the locatorValue :Password:
+06/07/20 01:06:28 AM Monday - BasePage - INFO : Send text  on Element with LocatorType: text and with the locatorValue :Password:
+06/07/20 01:06:29 AM Monday - BasePage - INFO : Element found with LocatorType: index with the locatorValue :3
+06/07/20 01:06:30 AM Monday - BasePage - INFO : Clicked on Element with LocatorType: index and with the locatorValue :3
+06/07/20 01:06:32 AM Monday - BasePage - INFO : Element found with LocatorType: text with the locatorValue :My Training
+06/07/20 01:06:32 AM Monday - BasePage - INFO :  Element with LocatorType: text and with the locatorValue :My Trainingis displayed 
+06/07/20 01:06:32 AM Monday - BasePage - INFO : Element found with LocatorType: id with the locatorValue :com.casparhealth.android.patient:id/action_therapy_week
+06/07/20 01:06:32 AM Monday - BasePage - INFO : Clicked on Element with LocatorType: id and with the locatorValue :com.casparhealth.android.patient:id/action_therapy_week
+06/07/20 01:06:32 AM Monday - BasePage - INFO : Element found with LocatorType: id with the locatorValue :com.casparhealth.android.patient:id/exercises
+06/07/20 01:06:33 AM Monday - BasePage - INFO : Clicked on Element with LocatorType: id and with the locatorValue :com.casparhealth.android.patient:id/exercises
+06/07/20 01:06:35 AM Monday - BasePage - INFO : Element found with LocatorType: index with the locatorValue :0
+06/07/20 01:06:36 AM Monday - BasePage - INFO : Clicked on Element with LocatorType: index and with the locatorValue :0
+06/07/20 01:06:36 AM Monday - BasePage - INFO : Element found with LocatorType: text with the locatorValue :YES
+06/07/20 01:06:38 AM Monday - BasePage - INFO : Clicked on Element with LocatorType: text and with the locatorValue :YES
+06/07/20 01:06:38 AM Monday - BasePage - INFO : Element found with LocatorType: id with the locatorValue :com.casparhealth.android.patient:id/settings_button
+06/07/20 01:06:38 AM Monday - BasePage - INFO : Clicked on Element with LocatorType: id and with the locatorValue :com.casparhealth.android.patient:id/settings_button
+06/07/20 01:06:38 AM Monday - BasePage - INFO : Element found with LocatorType: id with the locatorValue :com.casparhealth.android.patient:id/mirror_switch
+06/07/20 01:06:39 AM Monday - BasePage - INFO : Clicked on Element with LocatorType: id and with the locatorValue :com.casparhealth.android.patient:id/mirror_switch
+06/07/20 01:06:40 AM Monday - BasePage - INFO : Element found with LocatorType: id with the locatorValue :com.android.permissioncontroller:id/permission_allow_button
+06/07/20 01:06:40 AM Monday - BasePage - INFO : Clicked on Element with LocatorType: id and with the locatorValue :com.android.permissioncontroller:id/permission_allow_button
+06/07/20 01:06:41 AM Monday - BasePage - INFO : Element found with LocatorType: id with the locatorValue :com.casparhealth.android.patient:id/record_switch
+06/07/20 01:06:41 AM Monday - BasePage - INFO : Clicked on Element with LocatorType: id and with the locatorValue :com.casparhealth.android.patient:id/record_switch
+06/07/20 01:06:42 AM Monday - BasePage - INFO : Element found with LocatorType: id with the locatorValue :com.casparhealth.android.patient:id/save
+06/07/20 01:06:42 AM Monday - BasePage - INFO : Clicked on Element with LocatorType: id and with the locatorValue :com.casparhealth.android.patient:id/save
+06/07/20 01:06:42 AM Monday - BasePage - INFO : Element found with LocatorType: id with the locatorValue :com.casparhealth.android.patient:id/settings_button
+06/07/20 01:06:43 AM Monday - BasePage - INFO : Clicked on Element with LocatorType: id and with the locatorValue :com.casparhealth.android.patient:id/settings_button
+06/07/20 01:06:43 AM Monday - BasePage - INFO : Element found with LocatorType: id with the locatorValue :com.casparhealth.android.patient:id/mirror_switch
+06/07/20 01:06:44 AM Monday - BasePage - INFO : Getting text on element :: 
+06/07/20 01:06:44 AM Monday - BasePage - INFO : The text is :: 'ON'
+06/07/20 01:06:44 AM Monday - BasePage - INFO : Element found with LocatorType: id with the locatorValue :com.casparhealth.android.patient:id/record_switch
+06/07/20 01:06:44 AM Monday - BasePage - INFO : Getting text on element :: 
+06/07/20 01:06:44 AM Monday - BasePage - INFO : The text is :: 'OFF'

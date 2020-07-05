@@ -8,7 +8,9 @@ __1. Install the latest python x64 (3.8.3)__ \
 --- [Python 3.8.3](https://www.python.org/downloads/release/python-383/) Follow the default instalation process.
 	
 __2. Appium and python libraries ([Appium Python Client](https://pypi.org/project/Appium-Python-Client/))__ \
----	``` pip install Appium-Python-Client ```
+---	``` pip install Appium-Python-Client ``` \
+---	``` pip install -r requirements.txt ```  -> to install other libs
+
 
 __3. PyCharm Community version IDE__ \
 --- Follow the default installation process.
