@@ -21,7 +21,8 @@ __5. Android Studio Installation__ \
 
 __6. Install Java:__ \
 --- https://www.java.com/en/download/win10.jsp \
-		Java JRE is important to manage virtual devices. 
+Java JRE is important to manage virtual devices. 
+
 ---
 After several attempts trying to make the virtual machine working, the approach used to 
 accomplish this exercise was using my own device to automate one test case. 
